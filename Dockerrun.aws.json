@@ -1,0 +1,26 @@
+{
+    "AWSEBDockerrunVersion": 2,
+    "containerDefinitions": [
+        {
+            "name": "client",
+            "image": "klaudiuszkudla/multi-client",
+            "hostname": "client",
+            "essential": false
+        },
+        {
+            "name": "server",
+            "image": "klaudiuszkudla/multi-server",
+            "hostname": "api",
+            "essential": false
+        },
+        {
+            "name": "worker",
+            "image": "klaudiuszkudla/multi-image",
+            "hostname": "worker",
+            "essential": false
+        },
+        {
+            
+        }
+    ]
+}
